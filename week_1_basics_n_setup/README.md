@@ -1,14 +1,10 @@
 ### Introduction
 
-* [Video](https://www.youtube.com/watch?v=bkJZDmreIpA&list=PL3MmuxUbc_hJed7dXYoJw8DoCuVHhGEQb)
-* [Slides](https://www.slideshare.net/AlexeyGrigorev/data-engineering-zoomcamp-introduction)
-* Overview of [Architecture](https://github.com/DataTalksClub/data-engineering-zoomcamp#overview), [Technologies](https://github.com/DataTalksClub/data-engineering-zoomcamp#technologies) & [Pre-Requisites](https://github.com/DataTalksClub/data-engineering-zoomcamp#prerequisites)
+## Data pipelines
 
+A **data pipeline** is a service that receives data as input and outputs more data. For example, reading a CSV file, transforming the data somehow and storing it as a table in a PostgreSQL database.
 
-We suggest watching videos in the same order as in this document.
-
-The last video (setting up the environment) is optional, but you can check it earlier 
-if you have troubles setting up the environment and following along with the videos.
+![data pipeline](../docs/week1/01_01.png)
 
 
 ### Docker + Postgres
@@ -48,64 +44,3 @@ if you have troubles setting up the environment and following along with the vid
   * Communicating between containers in the network
   * `.dockerignore` file
 
-
-### GCP + Terraform
-
-[Code](1_terraform_gcp)
-
-* Introduction to GCP (Google Cloud Platform)
-  * [Video](https://www.youtube.com/watch?v=18jIzE41fJ4&list=PL3MmuxUbc_hJed7dXYoJw8DoCuVHhGEQb)
-* Introduction to Terraform Concepts & GCP Pre-Requisites
-  * [Video](https://www.youtube.com/watch?v=Hajwnmj0xfQ&list=PL3MmuxUbc_hJed7dXYoJw8DoCuVHhGEQb)
-  * [Companion Notes](1_terraform_gcp)
-* Workshop: Creating GCP Infrastructure with Terraform
-  * [Video](https://www.youtube.com/watch?v=dNkEgO-CExg&list=PL3MmuxUbc_hJed7dXYoJw8DoCuVHhGEQb)
-  * [Workshop](1_terraform_gcp/terraform)
-* Configuring terraform and GCP SDK on Windows
-  * [Instructions](1_terraform_gcp/windows.md)
-
-
-### Environment setup 
-
-For the course you'll need:
-
-* Python 3 (e.g. installed with Anaconda)
-* Google Cloud SDK
-* Docker with docker-compose
-* Terraform
-
-If you have problems setting up the env, you can check this video:
-
-* [Setting up the environment on cloud VM](https://www.youtube.com/watch?v=ae-CV2KfoN0&list=PL3MmuxUbc_hJed7dXYoJw8DoCuVHhGEQb)
-  * Generating SSH keys
-  * Creating a virtual machine on GCP
-  * Connecting to the VM with SSH
-  * Installing Anaconda
-  * Installing Docker
-  * Creating SSH `config` file
-  * Accessing the remote machine with VS Code and SSH remote
-  * Installing docker-compose
-  * Installing pgcli
-  * Port-forwarding with VS code: connecting to pgAdmin and Jupyter from the local computer
-  * Installing Terraform
-  * Using `sftp` for putting the credentials to the remote machine
-  * Shutting down and removing the instance
-
-### Homework
-
-* [Homework](../cohorts/2023/week_1_docker_sql/homework.md)
-
-
-## Community notes
-
-Did you take notes? You can share them here
-
-* [Notes from Alvaro Navas](https://github.com/ziritrion/dataeng-zoomcamp/blob/main/notes/1_intro.md)
-* [Notes from Abd](https://itnadigital.notion.site/Week-1-Introduction-f18de7e69eb4453594175d0b1334b2f4)
-* [Notes from Aaron](https://github.com/ABZ-Aaron/DataEngineerZoomCamp/blob/master/week_1_basics_n_setup/README.md)
-* [Notes from Faisal](https://github.com/FaisalMohd/data-engineering-zoomcamp/blob/main/week_1_basics_n_setup/Notes/DE%20Zoomcamp%20Week-1.pdf)
-* [Michael Harty's Notes](https://github.com/mharty3/data_engineering_zoomcamp_2022/tree/main/week01)
-* [Blog post from Isaac Kargar](https://kargarisaac.github.io/blog/data%20engineering/jupyter/2022/01/18/data-engineering-w1.html)
-* [Handwritten Notes By Mahmoud Zaher](https://github.com/zaherweb/DataEngineering/blob/master/week%201.pdf)
-
-* Add your notes here
