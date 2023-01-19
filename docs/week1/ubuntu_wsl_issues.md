@@ -4,12 +4,21 @@ I couldn't generate a ssh key for the github account because I couldn't access ~
 sudo ssh-keygen -A
 sudo /usr/sbin/service ssh start
 ```
-### Generate a ssh key
+### Connecting to GitHub with SSH
+[Adding a new SSH key to your GitHub account](https://docs.github.- Generate a ssh key
 ```
 ssh-keygen -t ed25519 -C "mremreozan@gmail.com"
 ```
-### Connecting to GitHub with SSH
-[Adding a new SSH key to your GitHub account](https://docs.github.com/en/authentication/connecting-to-github-with-ssh)
+- Copy the public ssh key into the github ssh settings 
+```
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_ed25519
+cat ~/.ssh/id_ed25519.pub
+```
+- Test the github connection
+```
+ssh -T git@github.com
+```
 
 ### Use SSH protocol for this repo
 ```

@@ -1,3 +1,4 @@
+version: '2.4'
 services:
   pgdatabase:
     image: postgres:13
@@ -9,6 +10,8 @@ services:
       - "./ny_taxi_postgres_data:/var/lib/postgresql/data:rw"
     ports:
       - "5432:5432"
+    networks:
+      - postgresdb_connection
   pgadmin:
     image: dpage/pgadmin4
     environment:
@@ -16,4 +19,7 @@ services:
       - PGADMIN_DEFAULT_PASSWORD=root
     ports:
       - "8080:80"
-    
+    networks:
+      - postgresdb_connection
+networks:
+  postgresdb_connection:

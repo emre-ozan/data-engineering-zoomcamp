@@ -1,0 +1,7 @@
+# week1 - Ingest Data
+# for postgres
+psycopg2-binary-2.9.5
+sqlalchemy==1.4.46
+pandas==1.5.3
+# Unit Test
+pytest==7.2.1
