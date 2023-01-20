@@ -21,5 +21,18 @@ services:
       - "8080:80"
     networks:
       - postgresdb_connection
+  ingest_data:
+    image: ingest_taxi:v001
+    command:
+      - --user=root
+      - --password=root
+      - --host=pgdatabase
+      - --port=5432
+      - --db=ny_taxi
+      - --table_name=yellow_taxi_trips
+      - --url=$URL
+      - --nrows=10
+    networks:
+      - postgresdb_connection
 networks:
   postgresdb_connection:
