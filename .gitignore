@@ -15,6 +15,8 @@ serving_dir
 *.csv
 .ipynb_checkpoints/
 !week_6_stream_processing/avro_example/data/rides.csv
-*__init__
+**__init__.py
 **venv
 *.ipynb
+*ny_taxi_postgres_data/
+*.csv
