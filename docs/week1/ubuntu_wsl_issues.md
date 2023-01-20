@@ -24,5 +24,11 @@ ssh -T git@github.com
 ```
 git remote set-url origin git@github.com:emre-ozan/data-engineering-zoomcamp.git
 ```
+## Pip issue in the dockerfile
+Add the nameserver line below into /etc/resolv.conf
+- sudo nano /etc/resolv.conf
+```
+nameserver 8.8.8.8
+```
 
 

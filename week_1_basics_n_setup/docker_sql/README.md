@@ -25,22 +25,10 @@ pgcli is a handy tool for managing postgres DB but it's cumbersome to use. pgAdm
 
 
 ## Installation
-- Run the docker images for postgres database and management tool
-```
-docker-compose up -d
-```
 - Build and run a docker image to ingest csv files into postgres DB
+- Run docker-compose for postgres database and management tool and ingesting data
 ```
 docker build -t ingest_taxi:v001 .
 export URL="https://github.com/DataTalksClub/nyc-tlc-data/releases/download/yellow/yellow_tripdata_2021-01.csv.gz"
-docker run -it \
-  --network=postgresdb_connection \
-  ingest_taxi:v001 \
-  --user=root \
-  --password=root \
-  --host=pgdatabase \
-  --port=5432 \
-  --db=ny_taxi \
-  --table_name=yellow_taxi_trips \
-  --url="${URL}"
+docker-compose up -d
 ```
