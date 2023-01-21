@@ -20,3 +20,4 @@ serving_dir
 *.ipynb
 *ny_taxi_postgres_data/
 *.csv
+*pgadmin_persistent
