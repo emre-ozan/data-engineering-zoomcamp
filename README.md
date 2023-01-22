@@ -1,4 +1,15 @@
-# Data Engineering Zoomcamp
+# Data Engineering Zoomcamp 2023
+
+## Technical Tasks in the Project
+### ETL (Extract, Transform, Load)
+- Do an ETL. Extract New York City data (CSV files), Transform it, and Load data Google Cloud Storage like a data lake.
+### Batch Analysis
+- Move data from google data storage to Google Bigquery (Data Warehouse). Transform data with DBT in Google Biguqery. Visulize data with Google Data Studio to show analyzes.
+### Streaming Analytics
+- Transform data in Google Cloud Storage with Spark. Firstly create a Kafka producer to have a streaming data. And then thanks to the Kafka consumer, have data and show streaming analyzes
+### Orchestrate Spark Jobs
+- [New york taxi data](docs/dataset.md) is a big data, it consists of a lot of csv files. We will orchestrate spark jobs with Prefect to extract data.
+
 
 ## Overview
 ### Architecture diagram

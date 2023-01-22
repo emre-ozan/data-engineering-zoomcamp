@@ -1,5 +1,5 @@
 ## Related Part in the Project
-![Week 1 - Overview](../../docs/week1/week1_overview.jpg)
+![Week 1 - Overview](../docs/week1/week1_overview.jpg)
 
 ## Data pipelines
 

@@ -17,12 +17,14 @@ services:
     environment:
       - PGADMIN_DEFAULT_EMAIL=admin@admin.com
       - PGADMIN_DEFAULT_PASSWORD=root
+    # volumes:
+    #   - "./pgadmin_persistent:/var/lib/pgadmin:rw" 
     ports:
       - "8080:80"
     networks:
       - postgresdb_connection
   ingest_data:
-    image: ingest_taxi:v001
+    build: ./ingest_csv_data
     command:
       - --user=root
       - --password=root

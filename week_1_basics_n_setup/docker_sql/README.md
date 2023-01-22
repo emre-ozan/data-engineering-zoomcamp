@@ -9,7 +9,7 @@ A **data pipeline** is an automated system to do an ETL (Extract, Transform, Loa
 
 ## Connecting pgAdmin and Postgres
 
-pgcli is a handy tool for managing postgres DB but it's cumbersome to use. pgAdmin is a web-based tool that makes it more convenient to access and manage our DB. We will create also a pgadmin tool in a docker container to access the postgres DB visually from the web broser. 
+pgcli is a handy tool for managing postgres DB but it's cumbersome to use. pgAdmin is a web-based tool (GUI) that makes it more convenient to access and manage our DB. We will create also a pgadmin tool in a docker container to access the postgres DB visually from the web broser. 
 
 ![data pipeline](../../docs/week1/pgadmin4.jpg)
 
@@ -28,7 +28,6 @@ pgcli is a handy tool for managing postgres DB but it's cumbersome to use. pgAdm
 - Build and run a docker image to ingest csv files into postgres DB
 - Run docker-compose for postgres database and management tool and ingesting data
 ```
-docker build -t ingest_taxi:v001 .
 export URL="https://github.com/DataTalksClub/nyc-tlc-data/releases/download/yellow/yellow_tripdata_2021-01.csv.gz"
 docker-compose up -d
 ```

@@ -1,5 +1,5 @@
-from week_1_basics_n_setup.docker_sql.ingest_data import connect_postgresdb
-from week_1_basics_n_setup.docker_sql.ingest_data import ingest_csv_data
+from week_1_basics_n_setup.docker_sql.ingest_csv_data.ingest_data import connect_postgresdb
+from week_1_basics_n_setup.docker_sql.ingest_csv_data.ingest_data import ingest_csv_data
 from unittest import TestCase
 
 def test_connect_postgresdb():
