@@ -3,7 +3,10 @@
 
 ## Data pipelines
 
-A **data pipeline** is a service that receives data as input and outputs more data. For example, reading a CSV file, transforming the data somehow and storing it as a table in a PostgreSQL database.
+Our task is to create a data pipeline for this week. A **data pipeline** is an automated system to do an ETL (Extract, Transform, Load) with data. We firstly read CSV files, store the data in a PostgreSQL database (DB) with a convenient schema. We need a postgresql DB. We create a postgres DB in a docker container. And then we explore data with sql commands.
+
+However, **we will not use postgres for the rest of the project**. Instead of storing data in the postgres DB, we transform them into parquet format and store in the google cloud storage (GCS).
+
 
 ![data pipeline](../docs/week1/01_01.png)
 

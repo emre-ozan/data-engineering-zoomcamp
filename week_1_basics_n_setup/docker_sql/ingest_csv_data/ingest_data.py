@@ -20,7 +20,7 @@ def ingest_csv_data(params):
     db = params.db
     table_name = params.table_name
     url = params.url
-    nrows = int(params.nrows)
+    nrows = params.nrows
 
     # the backup files are gzipped, and it's important to keep the correct extension
     # for pandas to be able to open the file
@@ -59,6 +59,6 @@ if __name__ == '__main__':
     parser.add_argument('--db', required=True, help='database name for postgres')
     parser.add_argument('--table_name', required=True, help='name of the table where we will write the results to')
     parser.add_argument('--url', required=True, help='url of the csv file')
-    parser.add_argument('--nrows', help='number of rows of file to read')
+    parser.add_argument('--nrows', type=int, help='number of rows of file to read')
     args = parser.parse_args()
     ingest_csv_data(args)

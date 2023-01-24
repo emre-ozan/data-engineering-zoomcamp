@@ -3,7 +3,9 @@
 
 ## Data pipelines (Ingesting NY Taxi CSV Data to Postgres DB)
 
-A **data pipeline** is an automated system to do an ETL (Extract, Transform, Load) with data. For this project, We firstly read CSV files, we store the data in a PostgreSQL database (DB) with a convenient schema. Becuase of that, we need a postgresql DB. We will create a postgres DB in a docker container.
+Our task is to create a data pipeline for this week. A **data pipeline** is an automated system to do an ETL (Extract, Transform, Load) with data. We firstly read CSV files, store the data in a PostgreSQL database (DB) with a convenient schema. We need a postgresql DB. We create a postgres DB in a docker container. And then we explore data with sql commands.
+
+However, **we will not use postgres for the rest of the project**. Instead of storing data in the postgres DB, we transform them into parquet format and store in the google cloud storage (GCS).
 
 ![data pipeline](../../docs/week1/01_01.png)
 

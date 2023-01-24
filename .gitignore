@@ -21,3 +21,5 @@ serving_dir
 *ny_taxi_postgres_data/
 *.csv
 *pgadmin_persistent
+*.json
+*:Zone.Identifier
