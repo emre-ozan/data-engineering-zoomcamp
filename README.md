@@ -8,7 +8,7 @@
 ### Streaming Analytics
 - Transform data in Google Cloud Storage with Spark. Firstly create a Kafka producer to have a streaming data. And then thanks to the Kafka consumer, have data and show streaming analyzes
 ### Orchestrate Spark Jobs
-- [New york taxi data](docs/dataset.md) is a big data, it consists of a lot of csv files. We will orchestrate spark jobs with Prefect to extract data.
+- [New york taxi data](docs/dataset.md) is a big data, it consists of a lot of csv files. We will orchestrate spark jobs with airflow to extract data.
 
 
 ## Overview
